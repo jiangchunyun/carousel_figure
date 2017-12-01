@@ -1,0 +1,14 @@
+.img_f{
+	width:800px;
+	height:400px;
+	margin:100px auto;
+}
+.img_f img{
+    width:800px;
+    height:400px;
+    float:left;
+    display:none;
+    border:3px dashed;
+    border-color:#BFEFFF;
+    border-radius:5px;
+}

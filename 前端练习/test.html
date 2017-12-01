@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>test</title>
+<link rel="stylesheet" href="test.css">
+<script type="text/javascript" src="jquery-1.10.0.js"></script>
+</head>
+<body>
+    <div class="img_f">
+    <img src="img//1.jpg">
+    <img src="img//2.jpg">
+    <img src="img//3.jpg">
+    <img src="img//4.jpg">
+    </div>
+	<script type="text/javascript">
+	var img_num=$(".img_f img");
+	var num=0;
+	img_num.eq(0).show();
+	function next_img()
+	{
+		num++;
+	   for(var i=0;i<img_num.size();i++)
+	   {
+	       img_num.eq(i).hide();	
+	   }
+	   img_num.eq(num-1%(img_num.size())).fadeOut();
+	   img_num.eq(num%(img_num.size())).fadeIn();
+     
+	}
+	setInterval(next_img,2000);
+	</script>
+</body>
+</html>
